@@ -7,6 +7,10 @@ android {
     namespace = "com.example.tripsathiapplication"
     compileSdk = 34
 
+    buildFeatures{
+        viewBinding = true;
+    }
+
     android {
         buildFeatures {
             viewBinding = true
@@ -41,6 +45,7 @@ android {
         kotlinOptions {
             jvmTarget = "1.8"
         }
+
     }
 
     dependencies {
@@ -54,4 +59,10 @@ android {
         androidTestImplementation(libs.androidx.junit)
         androidTestImplementation(libs.androidx.espresso.core)
     }
+}
+dependencies {
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
 }
