@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tripsathiapplication.SignUpActivity">
+
+
+    <TextView
+        android:id="@+id/createAccountTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="144dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="Create Account"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userNameEditTxt"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="46dp"
+        android:background="@drawable/input_field"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountTxtView" />
+
+    <EditText
+        android:id="@+id/emailEditTxt"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="46dp"
+        android:background="@drawable/input_field"
+
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userNameEditTxt" />
+
+    <EditText
+        android:id="@+id/phNumEditTxt"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="46dp"
+        android:background="@drawable/input_field"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditTxt" />
+
+    <EditText
+        android:id="@+id/pwEditTxt"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="46dp"
+        android:background="@drawable/input_field"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phNumEditTxt" />
+
+    <EditText
+        android:id="@+id/confirmPwEditTxt"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="46dp"
+        android:background="@drawable/input_field"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwEditTxt" />
+
+    <TextView
+        android:id="@+id/agreementTxtView"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="46dp"
+        android:gravity="center_horizontal"
+        android:text="By continuing, you agree to our terms of
+                                                service and privacy policy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPwEditTxt" />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="320dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="46dp"
+        android:backgroundTint="@color/button_color"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agreementTxtView" />
+
+    <TextView
+        android:id="@+id/accExistsTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="69dp"
+        android:text="Already have an account? Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpBtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/leftAngularImgBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="51dp"
+        app:layout_constraintEnd_toStartOf="@+id/createAccountTxtView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_left_angular_bracket" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
