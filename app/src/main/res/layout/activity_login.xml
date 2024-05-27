@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=""
+    tools:context=".Login Activity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="74dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="169dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/t2" />
+
+    <TextView
+        android:id="@+id/editTextText21"
+        android:layout_width="132dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="137dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Trip Sathi"
+        android:textColor=""
+        android:textSize="27sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="320dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="46dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:text="Username"
+        android:textColor=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText21" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="320dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="46dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Password"
+        android:text="Password"
+        android:textColor=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="320dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="46dp"
+        android:backgroundTint=""
+        android:text="LOGIN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textViewForgetPassword"
+        android:layout_width="120dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginEnd="146dp"
+        android:clickable="true"
+        android:paddingTop="16dp"
+        android:text="Forget Password?"
+        android:textColor=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button20" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
